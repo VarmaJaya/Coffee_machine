@@ -49,6 +49,7 @@ def process_coins():
     return total
 
 def is_transaction_successfull(money_received, drink_cost):
+    """Return True when the payment is accepted, or False if money is insufficient."""
     if money_received >= drink_cost:
         
         change = round(money_received-drink_cost, 2)
